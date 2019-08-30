@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke Suite" parallel="tests" thread-count="10" verbose="1">
+    <!-- PROD, QA1 -->
+    <parameter name="environment" value="QA1"/>
+    <!-- DESKTOP, MOBILE -->
+    <parameter name="platform" value="MOBILE"/>
+    <!-- WEB, HEADLESS, APP, API -->
+    <parameter name="service" value="WEB"/>
+    <!-- cloud, local -->
+    <parameter name="network" value="cloud"/>
+    <!--    -->
+    <parameter name="mobileDevice" value="Cloud_iPhone6"/>
+
+    <!--<parameter name="mobileDevice" value="Galaxy S8"/>-->
+
+    <parameter name="banner" value="Randalls"/>
+    <listeners>
+        <listener class-name="com.testProject.listeners.TestListener"/>
+    </listeners>
+    <groups>
+        <run>
+            <include name="Registration" />
+            <include name="SignIn" />
+        </run>
+    </groups>
+    <test name="Test-1">
+
+        <classes>
+            <!-- Registration Suite -->
+            <class name="com.testProject.testsuites.web.demo.registration.VerifyRegistration" />
+        </classes>
+    </test>
+</suite>
+

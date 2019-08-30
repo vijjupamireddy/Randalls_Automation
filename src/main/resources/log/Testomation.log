@@ -1,0 +1,8 @@
+2019-08-29 16:53:05 INFO  Log:24 - VerifySignIn :: TestScript is Start
+2019-08-29 16:53:06 INFO  Log:12 - ------------------------------
+2019-08-29 16:53:06 INFO  Log:13 - Mehtod# RegistrationPage:::'gotoRegistraionPage' :: is Start
+2019-08-29 16:53:06 INFO  Log:24 - Navigating to: https://www-qa1.randalls.com/account/short-registration.html
+2019-08-29 16:53:06 ERROR Log:34 - Exception in navigateToUrl :null
+2019-08-29 16:53:06 INFO  Log:24 - Navigated URL is :https://www-qa1.randalls.com/account/short-registration.html
+2019-08-29 16:53:06 INFO  Log:24 - VerifySignIn :: TestScript is End
+2019-08-29 16:53:06 INFO  Log:24 - ===================================================================
